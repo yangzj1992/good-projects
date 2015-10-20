@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+		<title>HTML5 模拟现实物理效果，感受 Web 技术魅力</title>
+		<style>
+			body {
+				overflow: hidden;
+				background-color: #000000;
+				user-select: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				-ms-user-select: none;
+			}
+			*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+			.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+			.clearfix{*zoom:1}
+			.fl{float:left}
+			.fr{float:right}
+			.fl,.fr{_display:inline}
+			.top-banner {
+				position:absolute;
+				z-index: 999;
+				left:0;
+				top:0;
+				height:40px;
+				line-height:40px;
+				padding:0 30px;
+				width:100%;
+				font-size: 13px;
+				background-color: rgba(255, 255, 255, 0.15);
+				color: #fff;
+				/*text-shadow: 1px 1px 3px #333;*/
+				/*box-shadow: 0 1px 0 #999;*/
+			}
+			.top-banner a {
+				color: #fff;
+				text-decoration: none;
+			}
+		</style>
+	</head> 
+	<body>
+	<div id="canvas"></div>
+	<script src="assets/protoclass.js"></script>
+	<script src='assets/box2d.js'></script>
+	<script src='assets/Main.js'></script>
+	<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+	</body>
+</html>
